@@ -1,0 +1,37 @@
+.nav-container {
+  width: 100vw;
+  background-color: var(--satin-linen);
+}
+
+.nav {
+  max-width: var(--container-width);
+  height: 80px;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo,
+.nav__logo:hover,
+.nav__logo img {
+  border: none;
+  padding: none;
+  height: 64px;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 32px 0 0 0;
+  list-style-type: none;
+}
+
+.nav__link,
+.nav__link:hover {
+  color: var(--black);
+  border: none;
+  padding: none;
+}

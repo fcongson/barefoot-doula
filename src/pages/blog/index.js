@@ -26,8 +26,8 @@ export default function BlogIndexPage() {
         <PageHeader
           style={{
             boxShadow:
-              "0.5rem 0 0 var(--lagom-core-colors-honey-base), -0.5rem 0 0 var(--lagom-core-colors-honey-base)",
-            backgroundColor: "var(--lagom-core-colors-honey-base)",
+              "0.5rem 0 0 var(--primary), -0.5rem 0 0 var(--primary)",
+            backgroundColor: "var(--primary)",
           }}
         >
           Latest Stories

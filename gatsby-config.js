@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Lagom Starter - Gatsby + Decap CMS",
+    title: "Barefoot Doula",
     description:
       "This repo contains an example website that is built with Gatsby, and Decap CMS.",
   },

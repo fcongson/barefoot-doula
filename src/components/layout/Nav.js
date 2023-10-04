@@ -1,17 +1,16 @@
-import { Container } from "@fcongson/lagom-ui";
 import { Link } from "gatsby";
 import React, { useState } from "react";
-import github from "../../../static/images/github-icon.svg";
-import logo from "../../../static/images/logo.png";
+import logo from "../../../static/images/logo-long.svg";
+import "./nav.css";
 
 export const Nav = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <Container>
+    <div className="nav-container">
       <nav role="navigation" aria-label="main-navigation" className="nav">
-        <Link to="/" title="Logo">
-          <img src={logo} alt="Lagom" style={{ width: "10rem" }} />
+        <Link to="/" title="Logo" className="nav__logo">
+          <img src={logo} alt="Lagom" />
         </Link>
         {/* Hamburger menu */}
         <button
@@ -23,31 +22,24 @@ export const Nav = () => {
           <span />
           <span />
         </button>
-        <ul id="navMenu" className={`${isActive && "is-active"}`}>
+        <ul className={`nav__menu ${isActive && "is-active"}`}>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/" className="nav__link">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to="/about" className="nav__link">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <a
-              href="https://github.com/fcongson/lagom-starter-gatsby-decap-cms"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={github}
-                alt="Github"
-                style={{ width: "1em", height: "1em" }}
-              />
-            </a>
+            <Link to="/products" className="nav__link">
+              Services
+            </Link>
           </li>
         </ul>
       </nav>
-    </Container>
+    </div>
   );
 };

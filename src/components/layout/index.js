@@ -45,9 +45,11 @@ export const Layout = ({ children }) => {
           sizes="32x32"
         />
       </Helmet>
-      <Nav />
-      <main>{children}</main>
-      <Footer />
+      <div className="body-container">
+        <Nav />
+        <main>{children}</main>
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 };

@@ -1,31 +1,18 @@
 @import "./variables.css";
 
 html {
-  background-color: var(--lagom-semantic-color-bg-default);
+  background-color: var(--satin-linen);
 }
 
-.nav {
+.body-container {
+  background-color: var(--satin-linen);
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 
-.nav ul {
-  list-style-type: none;
-}
-
-.nav a {
-  border: none;
-}
-
-.footer {
-  display: flex;
-}
-
-.footer a {
-  border: none;
-}
-
-.footer ul {
-  list-style-type: none;
+main {
+  flex: 1;
 }
 
 .full-width-image-container {
@@ -47,5 +34,5 @@ html {
 }
 
 .blog-list-item.is-featured {
-  background-color: var(--lagom-core-colors-honey-base);
+  background-color: var(--primary);
 }
