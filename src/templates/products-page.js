@@ -1,4 +1,4 @@
-import { Hero, ImageCaption } from "@fcongson/lagom-ui";
+import { Hero } from "@fcongson/lagom-ui";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
@@ -57,14 +57,9 @@ export const ProductsPageTemplate = ({
           <Testimonials testimonials={testimonials} />
         </Container>
       </Section>
-      <ImageCaption
-        image={
-          <GatsbyImage
-            image={fullImage?.childImageSharp?.gatsbyImageData}
-            style={{ height: "100%" }}
-          />
-        }
-        fullwidth
+      <GatsbyImage
+        image={fullImage?.childImageSharp?.gatsbyImageData}
+        style={{ height: "100%" }}
       />
       <Section>
         <Container>
