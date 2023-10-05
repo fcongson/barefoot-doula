@@ -1,0 +1,70 @@
+:root {
+  --background-color: var(--satin-linen);
+  --selection-color: var(--opium);
+
+  --font-sizes-h1: 48.829px;
+  --font-sizes-h2: 39.063px;
+  --font-sizes-h3: 31.25px;
+  --font-sizes-h4: 25px;
+  --font-sizes-h5: 20px;
+  --font-sizes-h6: 16px;
+
+  --line-heights-heading: 1.22;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: var(--selection-color); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--selection-color); /* Gecko Browsers */
+}
+
+html {
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-families-header);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--font-sizes-h1);
+  line-height: var(--line-heights-heading);
+}
+h2 {
+  font-size: var(--font-sizes-h2);
+  line-height: var(--line-heights-heading);
+}
+h3 {
+  font-size: var(--font-sizes-h3);
+  line-height: var(--line-heights-heading);
+}
+h4 {
+  font-size: var(--font-sizes-h4);
+  line-height: var(--line-heights-heading);
+}
+h5 {
+  font-size: var(--font-sizes-h5);
+  line-height: var(--line-heights-heading);
+}
+h6 {
+  font-size: var(--font-sizes-h6);
+  line-height: var(--line-heights-heading);
+}
+
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
