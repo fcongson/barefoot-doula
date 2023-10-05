@@ -1,7 +1,3 @@
-import "@fcongson/lagom-tokens/css/theme/_dark.css";
-import "@fcongson/lagom-tokens/css/theme/_light.css";
-import "@fcongson/lagom-tokens/css/variables/_core.css";
-import { ThemeProvider } from "@fcongson/lagom-ui";
 import { withPrefix } from "gatsby";
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -23,7 +19,7 @@ export const Layout = ({ children }) => {
   }, []);
 
   return (
-    <ThemeProvider>
+    <>
       <Helmet>
         <html lang="en" data-lagom-theme={prefersDark ? "dark" : "light"} />
         <title>{title}</title>
@@ -46,6 +42,6 @@ export const Layout = ({ children }) => {
         <main>{children}</main>
         <Footer />
       </div>
-    </ThemeProvider>
+    </>
   );
 };
