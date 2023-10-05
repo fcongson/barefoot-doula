@@ -14,4 +14,8 @@
 
   --font-families-header: var(--font-families-monospace);
   --font-families-body: var(--font-families-sans-serif);
+
+  --font-sizes-body: 16px;
+  
+  --line-heights-body: 1.7;
 }

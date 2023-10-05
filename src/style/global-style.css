@@ -1,5 +1,6 @@
 :root {
   --background-color: var(--satin-linen);
+  --foreground-color: var(--black);
   --selection-color: var(--opium);
 
   --font-sizes-h1: 48.829px;
@@ -24,6 +25,15 @@
 
 html {
   background-color: var(--background-color);
+}
+
+body {
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  font-family: var(--font-families-body);
+  font-size: var(--font-sizes-body);
+  line-height: var(--line-heights-body);
 }
 
 h1,
