@@ -1,6 +1,6 @@
-import { Container, PageHeader, Section } from "@fcongson/lagom-ui";
 import React from "react";
 import { BlogRoll } from "../../components/BlogRoll";
+import { Container, PageHeader, Section } from "../../components/core";
 import { Layout } from "../../components/layout";
 
 export default function BlogIndexPage() {
@@ -25,8 +25,7 @@ export default function BlogIndexPage() {
       >
         <PageHeader
           style={{
-            boxShadow:
-              "0.5rem 0 0 var(--primary), -0.5rem 0 0 var(--primary)",
+            boxShadow: "0.5rem 0 0 var(--primary), -0.5rem 0 0 var(--primary)",
             backgroundColor: "var(--primary)",
           }}
         >

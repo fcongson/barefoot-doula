@@ -1,6 +1,6 @@
-import { Container, PageHeader, Section } from "@fcongson/lagom-ui";
 import { Link } from "gatsby";
 import React from "react";
+import { Container, PageHeader, Section } from "../components/core";
 import { Layout } from "../components/layout";
 
 const NotFoundPage = () => (

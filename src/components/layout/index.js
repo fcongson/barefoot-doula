@@ -28,15 +28,11 @@ export const Layout = ({ children }) => {
         <html lang="en" data-lagom-theme={prefersDark ? "dark" : "light"} />
         <title>{title}</title>
         <meta name="description" content={description} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com/"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Domine:400,700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Quicksand:wght@400;700&display=swap"
           rel="stylesheet"
-          type="text/css"
         />
         <link
           rel="icon"

@@ -1,6 +1,7 @@
 .nav-container {
   width: 100vw;
   background-color: var(--satin-linen);
+  font-family: var(--font-families-body);
 }
 
 .nav {
@@ -34,4 +35,5 @@
   color: var(--black);
   border: none;
   padding: none;
+  font-weight: bold;
 }

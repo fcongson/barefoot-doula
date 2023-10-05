@@ -1,13 +1,17 @@
 :root {
-  --satin-linen: #E4DED2;
-  --yellow-metal: #7B693E;
-  --xanadu: #6C8673;
-  --opium: #8D726E;
-  --lisbon-brown: #413C24;
-  --black: #100F09;
+  --satin-linen: #e4ded2;
+  --yellow-metal: #7b693e;
+  --xanadu: #6c8673;
+  --opium: #8d726e;
+  --lisbon-brown: #413c24;
+  --black: #100f09;
 
   --primary: var(--xanadu);
   --body-color: var(--satin-linen);
-  
-  --container-width: 1000px;
+
+  --font-families-monospace: "Cutive Mono";
+  --font-families-sans-serif: "Quicksand";
+
+  --font-families-header: var(--font-families-monospace);
+  --font-families-body: var(--font-families-sans-serif);
 }

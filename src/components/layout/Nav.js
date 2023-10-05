@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
 import logo from "../../../static/images/logo-long.svg";
-import "./nav.css";
+import "./Nav.css";
 
 export const Nav = () => {
   const [isActive, setIsActive] = useState(false);

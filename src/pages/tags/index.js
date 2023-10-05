@@ -1,8 +1,8 @@
-import { Container, PageHeader, Section } from "@fcongson/lagom-ui";
 import { Link, graphql } from "gatsby";
 import { kebabCase } from "lodash";
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Container, PageHeader, Section } from "../../components/core";
 import { Layout } from "../../components/layout";
 
 export default function TagsPage({

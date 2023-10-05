@@ -1,0 +1,4 @@
+.section-header {
+  font-family: var(--font-families-header, sans-serif);
+  text-align: center;
+}

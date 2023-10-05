@@ -4,6 +4,7 @@
   padding: 2rem 0;
   background-color: var(--lisbon-brown);
   color: var(--satin-linen);
+  font-family: var(--font-families-body);
 }
 
 .footer {
@@ -26,7 +27,7 @@
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 32px 0 0 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -35,4 +36,5 @@
   color: var(--satin-linen);
   border: none;
   padding: none;
+  font-weight: bold;
 }

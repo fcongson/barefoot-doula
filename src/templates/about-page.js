@@ -1,8 +1,8 @@
-import { Container, PageHeader, Section } from "@fcongson/lagom-ui";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import { Content, HTMLContent } from "../components/Content";
+import { Container, PageHeader, Section } from "../components/core";
 import { Layout } from "../components/layout";
 
 // eslint-disable-next-line

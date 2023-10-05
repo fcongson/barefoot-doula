@@ -1,10 +1,10 @@
-import { Container, PageHeader, Section } from "@fcongson/lagom-ui";
 import { Link, graphql } from "gatsby";
 import { kebabCase } from "lodash";
 import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Content, HTMLContent } from "../components/Content";
+import { Container, PageHeader, Section } from "../components/core";
 import { Layout } from "../components/layout";
 
 // eslint-disable-next-line

@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import logo from "../../../static/images/logo-long-dark.svg";
-import "./footer.css";
+import "./Footer.css";
 
 export const Footer = () => {
   return (

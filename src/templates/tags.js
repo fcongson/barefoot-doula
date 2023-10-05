@@ -1,7 +1,7 @@
-import { Container, Section } from "@fcongson/lagom-ui";
 import { Link, graphql } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Container, Section } from "../components/core";
 import { Layout } from "../components/layout";
 
 const TagRoute = (props) => {
