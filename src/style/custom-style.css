@@ -26,11 +26,3 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-.blog-list-item {
-  margin: 2rem 0;
-}
-
-.blog-list-item.is-featured {
-  background-color: var(--primary);
-}

@@ -3,23 +3,15 @@ import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
 import React from "react";
-import { PreviewCompatibleImage } from "../components/PreviewCompatibleImage";
-import { Pricing } from "../components/Pricing";
-import { Testimonials } from "../components/Testimonials";
 import { Container, PageHeader, Section } from "../components/core";
 import { Layout } from "../components/layout";
 
 // eslint-disable-next-line
 export const ProductsPageTemplate = ({
-  image,
   title,
+  image,
   heading,
   description,
-  intro,
-  main,
-  testimonials,
-  fullImage,
-  pricing,
 }) => {
   return (
     <>
@@ -39,61 +31,15 @@ export const ProductsPageTemplate = ({
           <p>{description}</p>
         </Container>
       </Section>
-      <Section>
-        <Container>
-          <h3>{main.heading}</h3>
-          <p>{main.description}</p>
-        </Container>
-      </Section>
-      <Section>
-        <Container>
-          <PreviewCompatibleImage imageInfo={main.image1} />
-          <PreviewCompatibleImage imageInfo={main.image2} />
-          <PreviewCompatibleImage imageInfo={main.image3} />
-        </Container>
-      </Section>
-      <Section>
-        <Container>
-          <Testimonials testimonials={testimonials} />
-        </Container>
-      </Section>
-      <GatsbyImage
-        image={fullImage?.childImageSharp?.gatsbyImageData}
-        style={{ height: "100%" }}
-      />
-      <Section>
-        <Container>
-          <h2>{pricing.heading}</h2>
-          <p>{pricing.description}</p>
-          <Pricing data={pricing.plans} />
-        </Container>
-      </Section>
     </>
   );
 };
 
 ProductsPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   heading: PropTypes.string,
   description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-  main: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  }),
-  testimonials: PropTypes.array,
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array,
-  }),
 };
 
 const ProductsPage = ({ data }) => {
@@ -102,15 +48,10 @@ const ProductsPage = ({ data }) => {
   return (
     <Layout>
       <ProductsPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
+        image={frontmatter.image}
         heading={frontmatter.heading}
         description={frontmatter.description}
-        intro={frontmatter.intro}
-        main={frontmatter.main}
-        testimonials={frontmatter.testimonials}
-        fullImage={frontmatter.full_image}
-        pricing={frontmatter.pricing}
       />
     </Layout>
   );
@@ -138,66 +79,6 @@ export const ProductsPageQuery = graphql`
         }
         heading
         description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
-        main {
-          heading
-          description
-          image1 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-              }
-            }
-          }
-          image2 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-              }
-            }
-          }
-          image3 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(quality: 72, layout: FULL_WIDTH)
-              }
-            }
-          }
-        }
-        testimonials {
-          author
-          quote
-        }
-
-        full_image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
-        pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
-          }
-        }
       }
     }
   }

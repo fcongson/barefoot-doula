@@ -1,9 +1,9 @@
-import { Hero, LinkButton } from "@fcongson/lagom-ui";
-import { Link, graphql } from "gatsby";
+import { Hero } from "@fcongson/lagom-ui";
+import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
 import React from "react";
-import { Features } from "../components/Features";
+import { Testimonials } from "../components/Testimonials";
 import {
   Container,
   PageHeader,
@@ -14,13 +14,14 @@ import { Layout } from "../components/layout";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
-  image,
   title,
+  image,
   heading,
   subheading,
-  mainpitch,
-  description,
   intro,
+  philosophy,
+  services,
+  testimonials,
 }) => {
   return (
     <>
@@ -32,27 +33,37 @@ export const IndexPageTemplate = ({
           />
         }
       >
-        <PageHeader>{title}</PageHeader>
+        <PageHeader>{heading}</PageHeader>
         <SectionHeader>{subheading}</SectionHeader>
       </Hero>
       <Section>
         <Container>
-          <h2>{mainpitch.title}</h2>
-          <h3>{mainpitch.description}</h3>
+          <h2>{intro.title}</h2>
+          <p>{intro.description}</p>
         </Container>
       </Section>
       <Section>
         <Container>
-          <h3>{heading}</h3>
-          <p>{description}</p>
+          <h2>{philosophy.title}</h2>
+          <p>{philosophy.description}</p>
         </Container>
       </Section>
       <Section>
         <Container>
-          <Features gridItems={intro.blurbs} />
-          <LinkButton to="/products" Component={Link}>
-            See all products
-          </LinkButton>
+          <h2>{services.title}</h2>
+          <p>{services.description}</p>
+          {services.packages.map(({ title, text }) => (
+            <>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </>
+          ))}
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <h2>{testimonials.title}</h2>
+          <Testimonials testimonials={testimonials.testimonials} />
         </Container>
       </Section>
     </>
@@ -60,15 +71,14 @@ export const IndexPageTemplate = ({
 };
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  intro: PropTypes.object,
+  philosophy: PropTypes.object,
+  services: PropTypes.object,
+  testimonials: PropTypes.object,
 };
 
 const IndexPage = ({ data }) => {
@@ -77,13 +87,14 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
+        image={frontmatter.image}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
         intro={frontmatter.intro}
+        philosophy={frontmatter.philosophy}
+        services={frontmatter.services}
+        testimonials={frontmatter.testimonials}
       />
     </Layout>
   );
@@ -111,22 +122,28 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
+        intro {
           title
           description
         }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
+        philosophy {
+          title
+          description
+        }
+        services {
+          title
+          description
+          packages {
+            title
             text
           }
-          heading
-          description
+        }
+        testimonials {
+          title
+          testimonials {
+            author
+            quote
+          }
         }
       }
     }
