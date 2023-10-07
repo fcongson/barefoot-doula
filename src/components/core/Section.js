@@ -1,6 +1,10 @@
 import React from "react";
 import "./Section.css";
 
-export const Section = ({ children }) => {
-  return <section className="section">{children}</section>;
+export const Section = ({ children, ...restProps }) => {
+  return (
+    <section className="section" {...restProps}>
+      {children}
+    </section>
+  );
 };

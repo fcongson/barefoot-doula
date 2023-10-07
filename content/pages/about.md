@@ -4,7 +4,7 @@ path: /about
 title: About Kate
 ---
 
-## About Kate
+## Kia ora!
 
 ![Kate](/images/kinga-howard-HHw9lc0ogIs-unsplash.jpg)
 
