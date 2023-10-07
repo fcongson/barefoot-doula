@@ -1,6 +1,6 @@
 ---
-templateKey: "products-page"
-path: /products
+templateKey: "services-page"
+path: /services
 title: Services and Packages
 image: /images/luma-pimentel-1vnB2l7j3bY-unsplash.jpg
 heading: Birth and Post Partum Packages

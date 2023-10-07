@@ -101,15 +101,15 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "content/pages/products.md"
-        label: "Products"
-        name: "products"
+      - file: "content/pages/services.md"
+        label: "Services"
+        name: "services"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "products-page",
+              default: "services-page",
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }

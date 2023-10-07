@@ -22,7 +22,7 @@ export const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link to="/products" className="footer__link">
+            <Link to="/services" className="footer__link">
               Services
             </Link>
           </li>

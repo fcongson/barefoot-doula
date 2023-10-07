@@ -7,7 +7,7 @@ import { Container, PageHeader, Section } from "../components/core";
 import { Layout } from "../components/layout";
 
 // eslint-disable-next-line
-export const ProductsPageTemplate = ({
+export const ServicesPageTemplate = ({
   title,
   image,
   heading,
@@ -35,19 +35,19 @@ export const ProductsPageTemplate = ({
   );
 };
 
-ProductsPageTemplate.propTypes = {
+ServicesPageTemplate.propTypes = {
   title: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   heading: PropTypes.string,
   description: PropTypes.string,
 };
 
-const ProductsPage = ({ data }) => {
+const ServicesPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <ProductsPageTemplate
+      <ServicesPageTemplate
         title={frontmatter.title}
         image={frontmatter.image}
         heading={frontmatter.heading}
@@ -57,7 +57,7 @@ const ProductsPage = ({ data }) => {
   );
 };
 
-ProductsPage.propTypes = {
+ServicesPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -65,10 +65,10 @@ ProductsPage.propTypes = {
   }),
 };
 
-export default ProductsPage;
+export default ServicesPage;
 
-export const ProductsPageQuery = graphql`
-  query ProductsPage($id: String!) {
+export const ServicesPageQuery = graphql`
+  query ServicesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

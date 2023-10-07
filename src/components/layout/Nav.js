@@ -34,7 +34,7 @@ export const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link to="/products" className="nav__link">
+            <Link to="/services" className="nav__link">
               Services
             </Link>
           </li>
