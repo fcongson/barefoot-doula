@@ -16,6 +16,16 @@
   --font-families-body: var(--font-families-sans-serif);
 
   --font-sizes-body: 16px;
-  
+
   --line-heights-body: 1.7;
+
+  /* core component overrides */
+
+  --section-width: 1800px;
+  --container-width: 1000px;
+  --container-margin-bottom: 4rem;
+  --page-header-font-family: var(--font-families-header);
+  --quote-accent: var(--black);
+  --quote-font-family: var(--font-families-monospace);
+  --section-header-font-family: var(--font-families-header);
 }

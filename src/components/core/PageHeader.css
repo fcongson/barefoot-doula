@@ -1,4 +1,4 @@
 .page-header {
-  font-family: var(--font-families-header, sans-serif);
+  font-family: var(--page-header-font-family, sans-serif);
   text-align: center;
 }

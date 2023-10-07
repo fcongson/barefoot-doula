@@ -1,8 +1,10 @@
-:root {
-  --section-width: 1800px;
-}
-
 .section {
   max-width: var(--section-width, 1800px);
+  margin: 0 auto;
+}
+
+.section--background-color .container {
+  background-color: inherit;
+  padding: var(--container-margin-bottom) 0;
   margin: 0 auto;
 }

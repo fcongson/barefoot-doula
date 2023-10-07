@@ -1,8 +1,8 @@
 .blockquote {
   margin-bottom: 2rem;
   padding-left: 1rem;
-  border-left: 4px solid var(--black);
+  border-left: 4px solid var(--quote-accent, black);
   display: inline-block;
-  font-family: var(--font-families-monospace);
+  font-family: var(--quote-font-family, serif);
   font-style: italic;
 }

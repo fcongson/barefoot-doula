@@ -42,34 +42,14 @@ export const IndexPageTemplate = ({
           <p>{intro.description}</p>
         </Container>
       </Section>
-      <Section
-        style={{
-          backgroundColor: "var(--yellow-metal)",
-        }}
-      >
-        <Container
-          style={{
-            backgroundColor: "var(--yellow-metal)",
-            padding: "4rem 0",
-            margin: "0 auto",
-          }}
-        >
+      <Section backgroundColor="var(--yellow-metal)">
+        <Container>
           <h2>{philosophy.title}</h2>
           <p>{philosophy.description}</p>
         </Container>
       </Section>
-      <Section
-        style={{
-          backgroundColor: "var(--xanadu)",
-        }}
-      >
-        <Container
-          style={{
-            backgroundColor: "var(--xanadu)",
-            padding: "4rem 0",
-            margin: "0 auto",
-          }}
-        >
+      <Section backgroundColor="var(--xanadu)">
+        <Container>
           <h2>{services.title}</h2>
           <p>{services.description}</p>
           {services.packages.map(({ title, text }) => (
@@ -80,18 +60,8 @@ export const IndexPageTemplate = ({
           ))}
         </Container>
       </Section>
-      <Section
-        style={{
-          backgroundColor: "var(--opium)",
-        }}
-      >
-        <Container
-          style={{
-            backgroundColor: "var(--opium)",
-            padding: "4rem 0",
-            margin: "0 auto",
-          }}
-        >
+      <Section backgroundColor="var(--opium)">
+        <Container>
           <h2>{testimonials.title}</h2>
           <Testimonials testimonials={testimonials.testimonials} />
         </Container>
