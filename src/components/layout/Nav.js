@@ -16,7 +16,7 @@ export const Nav = () => {
             </Link>
             {/* Hamburger menu */}
             <button
-              className={`${isActive && "is-active"}`}
+              className={`nav__button ${isActive && "nav__button--active"}`}
               aria-expanded={isActive}
               onClick={() => setIsActive(!isActive)}
             >
@@ -24,7 +24,7 @@ export const Nav = () => {
               <span />
               <span />
             </button>
-            <ul className={`nav__menu ${isActive && "is-active"}`}>
+            <ul className={`nav__menu ${isActive && "nav__menu--active"}`}>
               <li>
                 <Link to="/" className="nav__link">
                   Home

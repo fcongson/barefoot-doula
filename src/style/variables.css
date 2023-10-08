@@ -66,6 +66,8 @@
 /* tablet portrait */
 @media screen and (max-width: 768px) {
   :root {
+    --nav-button-display: block;
+    --nav-menu-display: none;
     --footer-links-flex-direction: column;
     --footer-links-gap: 0.5rem;
   }
