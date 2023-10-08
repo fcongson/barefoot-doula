@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
-import logo from "../../../static/images/logo-long.svg";
 import "./Nav.css";
 
 export const Nav = () => {
@@ -10,7 +9,7 @@ export const Nav = () => {
     <div className="nav-container">
       <nav role="navigation" aria-label="main-navigation" className="nav">
         <Link to="/" title="Logo" className="nav__logo">
-          <img src={logo} alt="Lagom" />
+          <div className="img" />
         </Link>
         {/* Hamburger menu */}
         <button

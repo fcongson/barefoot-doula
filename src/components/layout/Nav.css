@@ -16,10 +16,15 @@
 
 .nav__logo,
 .nav__logo:hover,
-.nav__logo img {
+.nav__logo .img {
   border: none;
-  padding: none;
+  padding: 0;
   height: 64px;
+}
+
+.nav__logo .img {
+  background-image: var(--nav-logo-url);
+  width: var(--nav-logo-width);
 }
 
 .nav__menu {

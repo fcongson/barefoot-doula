@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
 import React from "react";
-import logo from "../../../static/images/logo-long-dark.svg";
 import "./Footer.css";
 
 export const Footer = () => {
@@ -8,7 +7,7 @@ export const Footer = () => {
     <div className="footer-container">
       <footer className="footer">
         <Link to="/" title="Logo" className="footer__logo">
-          <img src={logo} alt="Lagom" />
+          <div className="img" />
         </Link>
         <ul className="footer__links">
           <li>

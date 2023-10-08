@@ -1,4 +1,5 @@
 :root {
+  /* brand */
   --satin-linen: #e4ded2;
   --yellow-metal: #7b693e;
   --xanadu: #6c8673;
@@ -19,8 +20,22 @@
 
   --line-heights-body: 1.7;
 
-  /* core component overrides */
+  --logo-long-width: 459px;
+  --logo-short-width: 246px;
 
+  --logo-long-url: url(../../static/images/logo-long.svg);
+  --logo-long-dark-url: url(../../static/images/logo-long-dark.svg);
+  --logo-short-url: url(../../static/images/logo-short.svg);
+  --logo-short-dark-url: url(../../static/images/logo-short-dark.svg);
+
+  /* component overrides */
+  --nav-logo-url: var(--logo-long-url);
+  --nav-logo-width: var(--logo-long-width);
+
+  --footer-logo-url: var(--logo-long-dark-url);
+  --footer-logo-width: var(--logo-long-width);
+
+  /* core component overrides */
   --section-width: 1800px;
   --container-width: 1000px;
   --container-margin-bottom: 4rem;
@@ -28,4 +43,33 @@
   --quote-accent: var(--black);
   --quote-font-family: var(--font-families-monospace);
   --section-header-font-family: var(--font-families-header);
+
+  /* sizes */
+  --min-width-emphasized: calc(1.3 * var(--container-width));
+
+  --breakpoint-mobile-portrait: 320px;
+  --breakpoint-mobile-landscape: 568px;
+  --breakpoint-tablet-portrait: 768px;
+  --breakpoint-tablet-landscape: 992px;
+
+  /* media queries */
+  @media screen and (max-width: 320px) {
+    /* mobile portrait */
+  }
+  @media screen and (max-width: 568px) {
+    /* mobile landscape */
+  }
+  @media screen and (max-width: 768px) {
+    /* tablet portrait */
+  }
+  @media screen and (max-width: 992px) {
+    /* tablet landscape */
+    --nav-logo-url: var(--logo-short-url);
+    --nav-logo-width: var(--logo-short-width);
+    --footer-logo-url: var(--logo-short-dark-url);
+    --footer-logo-width: var(--logo-short-width);
+  }
+  @media screen and (min-width: 1300px) {
+    /* emphasized */
+  }
 }
