@@ -1,16 +1,14 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { v4 } from "uuid";
-import { Quote } from "./core";
 
 export const Testimonials = ({ testimonials }) => (
   <>
     {testimonials.map((testimonial) => (
       <article key={v4()}>
-        <Quote>
-          <p>"{testimonial.quote}"</p>
-          <cite> – {testimonial.author}</cite>
-        </Quote>
+        <p>
+          "{testimonial.quote}"<cite> – {testimonial.author}</cite>
+        </p>
       </article>
     ))}
   </>

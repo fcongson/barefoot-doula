@@ -2,7 +2,7 @@
 @import "./global-style.css";
 
 .body-container {
-  background-color: var(--satin-linen);
+  background-color: var(--body-color);
   font-family: var(--font-families-body);
   min-height: 100vh;
   display: flex;

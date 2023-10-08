@@ -6,9 +6,10 @@
   --opium: #8d726e;
   --lisbon-brown: #413c24;
   --black: #100f09;
+  --white: #ffffff;
 
   --primary: var(--xanadu);
-  --body-color: var(--satin-linen);
+  --body-color: var(--white);
 
   --font-families-monospace: "Cutive Mono";
   --font-families-sans-serif: "Quicksand";
