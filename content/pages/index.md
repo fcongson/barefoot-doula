@@ -1,28 +1,42 @@
 ---
 templateKey: index-page
 title: Rooted in relationships
-image: /images/priscilla-du-preez-e6fcNpur53A-unsplash.jpg
+image: /images/amy-humphries-qSrRVqkPJmw-unsplash.jpg
 heading: Rooted in relationships
 subheading: You get me as I am and I serve you as you are
 intro:
   title: I'm Kate
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis
+    lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
 philosophy:
   title: Philosophy
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis
+    lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
 services:
   title: Services
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis
+    lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
   packages:
     - title: Birth package
-      text: Birth package, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
+      text: Birth package, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus
+        magna fringilla. Ultrices sagittis orci a scelerisque purus.
     - title: Post partum package
-      text: Post partum package, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
+      text: Post partum package, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus
+        magna fringilla. Ultrices sagittis orci a scelerisque purus.
 testimonials:
   title: Testimonials
   testimonials:
     - author: Jami
-      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla. Ultrices sagittis orci a scelerisque purus."
+      quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis
+        lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
     - author: Frank
-      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla. Ultrices sagittis orci a scelerisque purus."
+      quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis
+        lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
 ---
