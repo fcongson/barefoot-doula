@@ -39,36 +39,39 @@
 }
 
 .nav__button span {
+  --nav-button-span-width: 32px;
+  --nav-button-span-gap: 8px;
+  border-radius: 1px;
   background-color: var(--black);
   display: var(--nav-button-display, none);
-  height: 1px;
-  left: calc(50% - 8px);
+  height: 2px;
+  left: calc((3.25rem - var(--nav-button-span-width)) / 2);
   position: absolute;
   transform-origin: center;
-  transition-duration: 86ms;
+  transition-duration: 200ms;
   transition-property: background-color, opacity, transform;
-  transition-timing-function: ease-out;
-  width: 16px;
+  transition-timing-function: ease-in-out;
+  width: var(--nav-button-span-width);
 }
 
 .nav__button span:first-child {
-  top: calc(50% - 6px);
+  top: calc(50% - var(--nav-button-span-gap));
 }
 .nav__button span:nth-child(2) {
-  top: calc(50% - 1px);
+  top: 50%;
 }
 .nav__button span:nth-child(3) {
-  top: calc(50% + 4px);
+  top: calc(50% + var(--nav-button-span-gap));
 }
 
 .nav__button.nav__button--active span:first-child {
-  transform: translateY(5px) rotate(45deg);
+  transform: translateY(var(--nav-button-span-gap)) rotate(45deg);
 }
 .nav__button.nav__button--active span:nth-child(2) {
   opacity: 0;
 }
 .nav__button.nav__button--active span:nth-child(3) {
-  transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(calc(-1 * var(--nav-button-span-gap))) rotate(-45deg);
 }
 
 .nav__menu {
