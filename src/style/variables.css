@@ -40,10 +40,11 @@
   --footer-links-gap: 2rem;
 
   /* core component overrides */
-  --hero-height: calc(100vh - var(--nav-height));
   --section-width: 1800px;
   --container-width: 800px;
   --container-margin-bottom: 4rem;
+  --hero-height: calc(100vh - var(--nav-height));
+  --hero-margin-bottom: var(--container-margin-bottom);
   --page-header-font-family: var(--font-families-header);
   --quote-accent: var(--black);
   --quote-font-family: var(--font-families-monospace);

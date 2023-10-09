@@ -34,8 +34,10 @@ export const IndexPageTemplate = ({
           />
         }
       >
-        <PageHeader color="var(--satin-linen)">{heading}</PageHeader>
-        <SectionHeader color="var(--satin-linen)">{subheading}</SectionHeader>
+        <Container marginNone>
+          <PageHeader color="var(--satin-linen)">{heading}</PageHeader>
+          <SectionHeader color="var(--satin-linen)">{subheading}</SectionHeader>
+        </Container>
       </Hero>
       <Section>
         <Container>

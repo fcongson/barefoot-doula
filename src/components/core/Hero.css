@@ -2,6 +2,7 @@
   width: 100vw;
   height: var(--hero-height, 100vh);
   display: grid;
+  margin-bottom: var(--hero-margin-bottom, 4rem);
 }
 
 .hero__image {

@@ -3,3 +3,7 @@
   margin: 0 auto;
   margin-bottom: var(--container-margin-bottom, 4rem);
 }
+
+.container--margin-none {
+  margin-bottom: unset;
+}
