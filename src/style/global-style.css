@@ -1,18 +1,3 @@
-:root {
-  --background-color: var(--satin-linen);
-  --foreground-color: var(--black);
-  --selection-color: var(--opium);
-
-  --font-sizes-h1: 48.829px;
-  --font-sizes-h2: 39.063px;
-  --font-sizes-h3: 31.25px;
-  --font-sizes-h4: 25px;
-  --font-sizes-h5: 20px;
-  --font-sizes-h6: 16px;
-
-  --line-heights-heading: 1.22;
-}
-
 * {
   -webkit-font-smoothing: antialiased;
 }

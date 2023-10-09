@@ -11,6 +11,19 @@
   --primary: var(--xanadu);
   --body-color: var(--white);
 
+  --background-color: var(--satin-linen);
+  --foreground-color: var(--black);
+  --selection-color: var(--opium);
+
+  --font-sizes-h1: 48.829px;
+  --font-sizes-h2: 39.063px;
+  --font-sizes-h3: 31.25px;
+  --font-sizes-h4: 25px;
+  --font-sizes-h5: 20px;
+  --font-sizes-h6: 16px;
+
+  --line-heights-heading: 1.22;
+
   --font-families-monospace: "Cutive Mono";
   --font-families-sans-serif: "Quicksand";
 
@@ -61,6 +74,14 @@
 
 /* mobile portrait */
 @media screen and (max-width: 320px) {
+  :root {
+    --font-sizes-h1: 31.25px;
+    --font-sizes-h2: 25px;
+    --font-sizes-h3: 20px;
+    --font-sizes-h4: 16px;
+    --font-sizes-h5: 16px;
+    --font-sizes-h6: 16px;
+  }
 }
 
 /* mobile landscape */
@@ -75,6 +96,12 @@
     --nav-menu-display: none;
     --footer-links-flex-direction: column;
     --footer-links-gap: 0.5rem;
+    --font-sizes-h1: 39.063px;
+    --font-sizes-h2: 31.25px;
+    --font-sizes-h3: 25px;
+    --font-sizes-h4: 20px;
+    --font-sizes-h5: 16px;
+    --font-sizes-h6: 16px;
   }
 }
 
