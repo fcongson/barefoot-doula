@@ -10,12 +10,15 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <Section>
-      <Container>
-        <PageHeader>{title}</PageHeader>
-        <PageContent content={content} />
-      </Container>
-    </Section>
+    <>
+      <Container />
+      <Section>
+        <Container>
+          <PageHeader>{title}</PageHeader>
+          <PageContent content={content} />
+        </Container>
+      </Section>
+    </>
   );
 };
 

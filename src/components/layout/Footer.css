@@ -32,6 +32,10 @@
   gap: 1rem;
 }
 
+.copyright {
+  text-align: right;
+}
+
 .footer__links {
   display: flex;
   flex-direction: var(--footer-links-flex-direction);

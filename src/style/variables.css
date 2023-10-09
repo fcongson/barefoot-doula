@@ -40,7 +40,7 @@
 
   /* core component overrides */
   --section-width: 1800px;
-  --container-width: 1000px;
+  --container-width: 800px;
   --container-margin-bottom: 4rem;
   --page-header-font-family: var(--font-families-header);
   --quote-accent: var(--black);
