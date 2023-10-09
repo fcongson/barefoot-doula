@@ -25,6 +25,13 @@
   width: var(--footer-logo-width);
 }
 
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
 .footer__links {
   display: flex;
   flex-direction: var(--footer-links-flex-direction);
