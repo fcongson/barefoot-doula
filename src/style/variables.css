@@ -30,6 +30,7 @@
   --logo-short-dark-url: url(../../static/images/logo-short-dark.svg);
 
   /* component overrides */
+  --nav-height: 80px;
   --nav-logo-url: var(--logo-long-url);
   --nav-logo-width: var(--logo-long-width);
 
@@ -39,6 +40,7 @@
   --footer-links-gap: 2rem;
 
   /* core component overrides */
+  --hero-height: calc(100vh - var(--nav-height));
   --section-width: 1800px;
   --container-width: 800px;
   --container-margin-bottom: 4rem;

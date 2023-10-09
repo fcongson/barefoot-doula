@@ -21,7 +21,7 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
-        <html lang="en" data-lagom-theme={prefersDark ? "dark" : "light"} />
+        <html lang="en" data-theme={prefersDark ? "dark" : "light"} />
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -1,4 +1,3 @@
-import { Hero } from "@fcongson/lagom-ui";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
@@ -6,6 +5,7 @@ import React from "react";
 import { Testimonials } from "../components/Testimonials";
 import {
   Container,
+  Hero,
   PageHeader,
   Section,
   SectionHeader,
@@ -30,11 +30,12 @@ export const IndexPageTemplate = ({
           <GatsbyImage
             image={image?.childImageSharp?.gatsbyImageData}
             style={{ height: "100%" }}
+            alt=""
           />
         }
       >
-        <PageHeader>{heading}</PageHeader>
-        <SectionHeader>{subheading}</SectionHeader>
+        <PageHeader color="var(--satin-linen)">{heading}</PageHeader>
+        <SectionHeader color="var(--satin-linen)">{subheading}</SectionHeader>
       </Hero>
       <Section>
         <Container>
@@ -52,11 +53,11 @@ export const IndexPageTemplate = ({
         <Container>
           <h2>{services.title}</h2>
           <p>{services.description}</p>
-          {services.packages.map(({ title, text }) => (
-            <>
+          {services.packages.map(({ title, text }, index) => (
+            <div key={index}>
               <h3>{title}</h3>
               <p>{text}</p>
-            </>
+            </div>
           ))}
         </Container>
       </Section>
