@@ -4,9 +4,11 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Testimonials } from "../components/Testimonials";
 import {
+  Container,
   FeaturedSection,
   Hero,
   PageHeader,
+  Section,
   SectionHeader,
 } from "../components/core";
 import { Layout } from "../components/layout";
@@ -33,8 +35,14 @@ export const IndexPageTemplate = ({
         }
         className="hero-home"
       >
-        <PageHeader color="var(--satin-linen)">{heading}</PageHeader>
-        <SectionHeader color="var(--satin-linen)">{subheading}</SectionHeader>
+        <Section>
+          <Container>
+            <PageHeader color="var(--satin-linen)">{heading}</PageHeader>
+            <SectionHeader color="var(--satin-linen)">
+              {subheading}
+            </SectionHeader>
+          </Container>
+        </Section>
       </Hero>
       <FeaturedSection backgroundColor="var(--body-color)">
         <h2>{intro.title}</h2>
