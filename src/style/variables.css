@@ -15,17 +15,10 @@
   --foreground-color: var(--black);
   --selection-color: var(--opium);
 
-  --font-sizes-h1: 48.829px;
-  --font-sizes-h2: 39.063px;
-  --font-sizes-h3: 31.25px;
-  --font-sizes-h4: 25px;
-  --font-sizes-h5: 20px;
-  --font-sizes-h6: 16px;
-
-  --line-heights-heading: 1.22;
-
   --font-families-monospace: "Cutive Mono";
   --font-families-sans-serif: "Quicksand";
+
+  --line-heights-heading: 1.22;
 
   --font-families-heading: var(--font-families-monospace);
   --font-families-body: var(--font-families-sans-serif);
@@ -41,6 +34,27 @@
   --logo-long-dark-url: url(../../static/images/logo-long-dark.svg);
   --logo-short-url: url(../../static/images/logo-short.svg);
   --logo-short-dark-url: url(../../static/images/logo-short-dark.svg);
+
+  /* typography scales */
+  --header-scale-1: 121.5px;
+  --header-scale-2: 81px;
+  --header-scale-3: 54px;
+  --header-scale-4: 36px;
+  --header-scale-5: 24px;
+  --header-scale-6: 16px;
+  --font-scale-1: var(--lagom-core-font-sizes-h1);
+  --font-scale-2: var(--lagom-core-font-sizes-h2);
+  --font-scale-3: var(--lagom-core-font-sizes-h3);
+  --font-scale-4: var(--lagom-core-font-sizes-h4);
+  --font-scale-5: var(--lagom-core-font-sizes-h5);
+  --font-scale-6: var(--lagom-core-font-sizes-h6);
+
+  --font-sizes-h1: var(--font-scale-1);
+  --font-sizes-h2: var(--font-scale-2);
+  --font-sizes-h3: var(--font-scale-3);
+  --font-sizes-h4: var(--font-scale-4);
+  --font-sizes-h5: var(--font-scale-5);
+  --font-sizes-h6: var(--font-scale-6);
 
   /* component overrides */
   --nav-height: 80px;
@@ -72,30 +86,29 @@
   --breakpoint-tablet-landscape: 992px;
 
   /* lagom overrides */
-
-  --lagom-component-page-header-typography: 700 81px/1.22
+  --lagom-component-page-header-typography: 700 var(--header-scale-2) / 1.22
     var(--font-families-heading);
-  --lagom-component-section-header-typography: 700 54px/1.22
+  --lagom-component-section-header-typography: 700 var(--header-scale-3) / 1.22
     var(--font-families-heading);
 }
 
 /* tablet landscape */
 @media screen and (max-width: 992px) {
   :root {
-    --font-sizes-h1: 39.063px;
-    --font-sizes-h2: 31.25px;
-    --font-sizes-h3: 25px;
-    --font-sizes-h4: 20px;
-    --font-sizes-h5: 16px;
-    --font-sizes-h6: 16px;
     --nav-logo-url: var(--logo-short-url);
     --nav-logo-width: var(--logo-short-width);
     --footer-logo-url: var(--logo-short-dark-url);
     --footer-logo-width: var(--logo-short-width);
-    --lagom-component-page-header-typography: 700 54px/1.22
+    --font-sizes-h1: var(--font-scale-2);
+    --font-sizes-h2: var(--font-scale-3);
+    --font-sizes-h3: var(--font-scale-4);
+    --font-sizes-h4: var(--font-scale-5);
+    --font-sizes-h5: var(--font-scale-6);
+    --font-sizes-h6: var(--font-scale-6);
+    --lagom-component-page-header-typography: 700 var(--header-scale-3) / 1.22
       var(--font-families-heading);
-    --lagom-component-section-header-typography: 700 36px/1.22
-      var(--font-families-heading);
+    --lagom-component-section-header-typography: 700 var(--header-scale-4) /
+      1.22 var(--font-families-heading);
   }
 }
 
@@ -113,12 +126,16 @@
 /* mobile landscape */
 @media screen and (max-width: 568px) {
   :root {
-    --font-sizes-h1: 31.25px;
-    --font-sizes-h2: 25px;
-    --font-sizes-h3: 20px;
-    --font-sizes-h4: 16px;
-    --font-sizes-h5: 16px;
-    --font-sizes-h6: 16px;
+    --font-sizes-h1: var(--font-scale-3);
+    --font-sizes-h2: var(--font-scale-4);
+    --font-sizes-h3: var(--font-scale-5);
+    --font-sizes-h4: var(--font-scale-6);
+    --font-sizes-h5: var(--font-scale-6);
+    --font-sizes-h6: var(--font-scale-6);
+    --lagom-component-page-header-typography: 700 var(--header-scale-4) / 1.22
+      var(--font-families-heading);
+    --lagom-component-section-header-typography: 700 var(--header-scale-5) /
+      1.22 var(--font-families-heading);
   }
 }
 
