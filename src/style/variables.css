@@ -63,6 +63,7 @@
 
   --footer-logo-url: var(--logo-long-dark-url);
   --footer-logo-width: var(--logo-long-width);
+  --footer-flex-direction: row;
   --footer-links-flex-direction: row;
   --footer-links-gap: 2rem;
 
@@ -141,6 +142,9 @@
 
 /* mobile portrait */
 @media screen and (max-width: 320px) {
+  :root {
+    --footer-flex-direction: column;
+  }
 }
 
 /* emphasized */
