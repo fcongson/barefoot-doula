@@ -31,11 +31,12 @@ export const IndexPageTemplate = ({
             style={{ height: "100%" }}
           />
         }
+        className="hero-home"
       >
         <PageHeader color="var(--satin-linen)">{heading}</PageHeader>
         <SectionHeader color="var(--satin-linen)">{subheading}</SectionHeader>
       </Hero>
-      <FeaturedSection>
+      <FeaturedSection backgroundColor="var(--body-color)">
         <h2>{intro.title}</h2>
         <p>{intro.description}</p>
       </FeaturedSection>

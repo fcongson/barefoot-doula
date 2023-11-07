@@ -1,12 +1,12 @@
 @import "./variables.css";
 @import "./global-style.css";
 
-html {
+/* html {
   background-color: var(--body-color);
-}
+} */
 
 .body-container {
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
   font-family: var(--font-families-body);
   min-height: 100vh;
   display: flex;
@@ -15,4 +15,8 @@ html {
 
 main {
   flex: 1;
+}
+
+.hero-home {
+  margin-bottom: 0;
 }
