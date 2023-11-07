@@ -37,7 +37,13 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: list,
+                    fields:
+                      [{ label: Paragraph, name: paragraph, widget: text }],
+                  },
                 ],
             }
           - {
@@ -47,7 +53,13 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: list,
+                    fields:
+                      [{ label: Paragraph, name: paragraph, widget: text }],
+                  },
                 ],
             }
           - {
@@ -57,7 +69,13 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: list,
+                    fields:
+                      [{ label: Paragraph, name: paragraph, widget: text }],
+                  },
                   {
                     label: Packages,
                     name: packages,

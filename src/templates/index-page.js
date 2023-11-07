@@ -46,15 +46,21 @@ export const IndexPageTemplate = ({
       </Hero>
       <FeaturedSection backgroundColor="var(--body-color)">
         <h2>{intro.title}</h2>
-        <p>{intro.description}</p>
+        {intro.description.map(({ paragraph }) => (
+          <p>{paragraph}</p>
+        ))}
       </FeaturedSection>
       <FeaturedSection backgroundColor="var(--yellow-metal)">
         <h2>{philosophy.title}</h2>
-        <p>{philosophy.description}</p>
+        {philosophy.description.map(({ paragraph }) => (
+          <p>{paragraph}</p>
+        ))}
       </FeaturedSection>
       <FeaturedSection backgroundColor="var(--xanadu)">
         <h2>{services.title}</h2>
-        <p>{services.description}</p>
+        {services.description.map(({ paragraph }) => (
+          <p>{paragraph}</p>
+        ))}
         {services.packages.map(({ title, text }, index) => (
           <div key={index}>
             <h3>{title}</h3>
@@ -124,15 +130,21 @@ export const pageQuery = graphql`
         subheading
         intro {
           title
-          description
+          description {
+            paragraph
+          }
         }
         philosophy {
           title
-          description
+          description {
+            paragraph
+          }
         }
         services {
           title
-          description
+          description {
+            paragraph
+          }
           packages {
             title
             text
