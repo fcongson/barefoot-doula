@@ -1,6 +1,10 @@
 @import "./variables.css";
 @import "./global-style.css";
 
+html {
+  background-color: var(--body-color);
+}
+
 .body-container {
   background-color: var(--body-color);
   font-family: var(--font-families-body);

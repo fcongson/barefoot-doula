@@ -1,3 +1,6 @@
+import "@fcongson/lagom-tokens/css/theme/_dark.css";
+import "@fcongson/lagom-tokens/css/theme/_light.css";
+import "@fcongson/lagom-tokens/css/variables/_core.css";
 import { withPrefix } from "gatsby";
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";

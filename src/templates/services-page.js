@@ -22,9 +22,7 @@ export const ServicesPageTemplate = ({
           />
         }
       >
-        <Container marginNone>
-          <PageHeader>{title}</PageHeader>
-        </Container>
+        <PageHeader>{title}</PageHeader>
       </Hero>
       <Section>
         <Container>

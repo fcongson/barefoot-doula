@@ -1,9 +1,9 @@
-.container {
-  max-width: var(--container-width, 1000px);
+.lagom-container {
+  max-width: var(--lagom-component-container-width, 1000px);
   margin: 0 auto;
-  margin-bottom: var(--container-margin-bottom, 4rem);
+  margin-bottom: var(--lagom-component-container-margin-bottom, 4rem);
 }
 
-.container--margin-none {
+.lagom-container--margin-none {
   margin-bottom: unset;
 }

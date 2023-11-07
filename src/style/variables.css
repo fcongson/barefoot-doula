@@ -27,7 +27,7 @@
   --font-families-monospace: "Cutive Mono";
   --font-families-sans-serif: "Quicksand";
 
-  --font-families-header: var(--font-families-monospace);
+  --font-families-heading: var(--font-families-monospace);
   --font-families-body: var(--font-families-sans-serif);
 
   --font-sizes-body: 16px;
@@ -58,10 +58,10 @@
   --container-margin-bottom: 4rem;
   --hero-height: calc(100vh - var(--nav-height));
   --hero-margin-bottom: var(--container-margin-bottom);
-  --page-header-font-family: var(--font-families-header);
+  --page-header-font-family: var(--font-families-heading);
   --quote-accent: var(--black);
   --quote-font-family: var(--font-families-monospace);
-  --section-header-font-family: var(--font-families-header);
+  --section-header-font-family: var(--font-families-heading);
 
   /* sizes */
   --min-width-emphasized: calc(1.3 * var(--container-width));
@@ -70,22 +70,33 @@
   --breakpoint-mobile-landscape: 568px;
   --breakpoint-tablet-portrait: 768px;
   --breakpoint-tablet-landscape: 992px;
+
+  /* lagom overrides */
+
+  --lagom-component-page-header-typography: 700 81px/1.22
+    var(--font-families-heading);
+  --lagom-component-section-header-typography: 700 54px/1.22
+    var(--font-families-heading);
 }
 
-/* mobile portrait */
-@media screen and (max-width: 320px) {
+/* tablet landscape */
+@media screen and (max-width: 992px) {
   :root {
-    --font-sizes-h1: 31.25px;
-    --font-sizes-h2: 25px;
-    --font-sizes-h3: 20px;
-    --font-sizes-h4: 16px;
+    --font-sizes-h1: 39.063px;
+    --font-sizes-h2: 31.25px;
+    --font-sizes-h3: 25px;
+    --font-sizes-h4: 20px;
     --font-sizes-h5: 16px;
     --font-sizes-h6: 16px;
+    --nav-logo-url: var(--logo-short-url);
+    --nav-logo-width: var(--logo-short-width);
+    --footer-logo-url: var(--logo-short-dark-url);
+    --footer-logo-width: var(--logo-short-width);
+    --lagom-component-page-header-typography: 700 54px/1.22
+      var(--font-families-heading);
+    --lagom-component-section-header-typography: 700 36px/1.22
+      var(--font-families-heading);
   }
-}
-
-/* mobile landscape */
-@media screen and (max-width: 568px) {
 }
 
 /* tablet portrait */
@@ -96,23 +107,23 @@
     --nav-menu-display: none;
     --footer-links-flex-direction: column;
     --footer-links-gap: 0.5rem;
-    --font-sizes-h1: 39.063px;
-    --font-sizes-h2: 31.25px;
-    --font-sizes-h3: 25px;
-    --font-sizes-h4: 20px;
+  }
+}
+
+/* mobile landscape */
+@media screen and (max-width: 568px) {
+  :root {
+    --font-sizes-h1: 31.25px;
+    --font-sizes-h2: 25px;
+    --font-sizes-h3: 20px;
+    --font-sizes-h4: 16px;
     --font-sizes-h5: 16px;
     --font-sizes-h6: 16px;
   }
 }
 
-/* tablet landscape */
-@media screen and (max-width: 992px) {
-  :root {
-    --nav-logo-url: var(--logo-short-url);
-    --nav-logo-width: var(--logo-short-width);
-    --footer-logo-url: var(--logo-short-dark-url);
-    --footer-logo-width: var(--logo-short-width);
-  }
+/* mobile portrait */
+@media screen and (max-width: 320px) {
 }
 
 /* emphasized */

@@ -1,4 +1,4 @@
-.section {
+.lagom-section {
   /* Fallback */
   padding: 0 1rem;
 
@@ -10,12 +10,13 @@
   padding-left: calc(max(1rem, env(safe-area-inset-left)));
   padding-right: calc(max(1rem, env(safe-area-inset-right)));
 
-  max-width: var(--section-width, 1800px);
+  max-width: var(--lagom-component-section-width, 1800px);
   margin: 0 auto;
+  overflow: hidden; /* TODO: Should this be global? Currently used to hide emphasized content overflowing beyond small viewports */
 }
 
-.section--background-color .container {
+.lagom-section--background-color .container {
   background-color: inherit;
-  padding: var(--container-margin-bottom) 0;
+  padding: var(--lagom-component-container-margin-bottom) 0;
   margin: 0 auto;
 }

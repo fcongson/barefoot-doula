@@ -1,4 +1,6 @@
+import { clsx } from "clsx";
 import React from "react";
+
 import "./Container.css";
 
 export const Container = ({
@@ -9,9 +11,11 @@ export const Container = ({
 }) => {
   return (
     <div
-      className={`container ${!!className ? className : ""} ${
-        !!marginNone ? "container--margin-none" : ""
-      }`}
+      className={clsx(
+        "lagom-container",
+        className,
+        marginNone && "lagom-container--margin-none"
+      )}
       {...restProps}
     >
       {children}

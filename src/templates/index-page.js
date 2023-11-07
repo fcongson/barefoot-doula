@@ -4,10 +4,9 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Testimonials } from "../components/Testimonials";
 import {
-  Container,
+  FeaturedSection,
   Hero,
   PageHeader,
-  Section,
   SectionHeader,
 } from "../components/core";
 import { Layout } from "../components/layout";
@@ -30,45 +29,34 @@ export const IndexPageTemplate = ({
           <GatsbyImage
             image={image?.childImageSharp?.gatsbyImageData}
             style={{ height: "100%" }}
-            alt=""
           />
         }
       >
-        <Container marginNone>
-          <PageHeader color="var(--satin-linen)">{heading}</PageHeader>
-          <SectionHeader color="var(--satin-linen)">{subheading}</SectionHeader>
-        </Container>
+        <PageHeader color="var(--satin-linen)">{heading}</PageHeader>
+        <SectionHeader color="var(--satin-linen)">{subheading}</SectionHeader>
       </Hero>
-      <Section>
-        <Container>
-          <h2>{intro.title}</h2>
-          <p>{intro.description}</p>
-        </Container>
-      </Section>
-      <Section backgroundColor="var(--yellow-metal)">
-        <Container>
-          <h2>{philosophy.title}</h2>
-          <p>{philosophy.description}</p>
-        </Container>
-      </Section>
-      <Section backgroundColor="var(--xanadu)">
-        <Container>
-          <h2>{services.title}</h2>
-          <p>{services.description}</p>
-          {services.packages.map(({ title, text }, index) => (
-            <div key={index}>
-              <h3>{title}</h3>
-              <p>{text}</p>
-            </div>
-          ))}
-        </Container>
-      </Section>
-      <Section backgroundColor="var(--opium)">
-        <Container>
-          <h2>{testimonials.title}</h2>
-          <Testimonials testimonials={testimonials.testimonials} />
-        </Container>
-      </Section>
+      <FeaturedSection>
+        <h2>{intro.title}</h2>
+        <p>{intro.description}</p>
+      </FeaturedSection>
+      <FeaturedSection backgroundColor="var(--yellow-metal)">
+        <h2>{philosophy.title}</h2>
+        <p>{philosophy.description}</p>
+      </FeaturedSection>
+      <FeaturedSection backgroundColor="var(--xanadu)">
+        <h2>{services.title}</h2>
+        <p>{services.description}</p>
+        {services.packages.map(({ title, text }, index) => (
+          <div key={index}>
+            <h3>{title}</h3>
+            <p>{text}</p>
+          </div>
+        ))}
+      </FeaturedSection>
+      <FeaturedSection backgroundColor="var(--opium)">
+        <h2>{testimonials.title}</h2>
+        <Testimonials testimonials={testimonials.testimonials} />
+      </FeaturedSection>
     </>
   );
 };

@@ -1,4 +1,4 @@
-.blockquote {
+.lagom-quote {
   margin-bottom: 2rem;
   padding-left: 1rem;
   border-left: 4px solid var(--quote-accent, black);

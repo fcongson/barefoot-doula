@@ -1351,6 +1351,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fcongson/lagom-tokens@^0.15.0":
+  version "0.15.0"
+  resolved "https://npm.pkg.github.com/download/@fcongson/lagom-tokens/0.15.0/dd2206ceaf870402dc3474eaf15a48d04b3262fd#dd2206ceaf870402dc3474eaf15a48d04b3262fd"
+  integrity sha512-JJSbJvl9+KP3l2rTSTWow4MfNSo+sIUaeGYvMILNprwh1j+KKsDMOl/13CmCGZ+tdrMvmy5d9yWZhYXSw/GFSg==
+
 "@gatsbyjs/parcel-namer-relative-to-cwd@^2.12.0":
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-2.12.0.tgz#4bd49fb678e739624d0bc39c3376b4781bf6a0ee"
@@ -3994,6 +3999,11 @@ clone@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
   integrity sha512-3Pe/CF1Nn94hyhIYpjtiLhdCoEoz0DqQ+988E9gmeEdQZlojxnOb74wctFyuwWQHzqyf9X7C7MG8juUpqBJT8w==
+
+clsx@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.0.0.tgz#12658f3fd98fafe62075595a5c30e43d18f3d00b"
+  integrity sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==
 
 codemirror@^5.46.0:
   version "5.65.15"

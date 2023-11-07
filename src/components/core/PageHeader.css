@@ -1,4 +1,4 @@
-.page-header {
-  font-family: var(--page-header-font-family, sans-serif);
+.lagom-page-header {
+  font: var(--lagom-component-page-header-typography);
   text-align: center;
 }

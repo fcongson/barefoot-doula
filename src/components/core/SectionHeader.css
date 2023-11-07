@@ -1,4 +1,4 @@
-.section-header {
-  font-family: var(--section-header-font-family, sans-serif);
+.lagom-section-header {
+  font: var(--lagom-component-section-header-typography);
   text-align: center;
 }

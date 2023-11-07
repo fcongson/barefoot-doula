@@ -1,4 +1,6 @@
+import { clsx } from "clsx";
 import React from "react";
+
 import "./Section.css";
 
 export const Section = ({
@@ -9,9 +11,11 @@ export const Section = ({
 }) => {
   return (
     <section
-      className={`section ${!!className ? className : ""} ${
-        !!backgroundColor ? "section--background-color" : ""
-      }`}
+      className={clsx(
+        "lagom-section",
+        className,
+        !!backgroundColor && "lagom-section--background-color"
+      )}
       style={!!backgroundColor ? { backgroundColor: backgroundColor } : null}
       {...restProps}
     >
