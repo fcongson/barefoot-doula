@@ -11,9 +11,14 @@ intro:
     lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
 philosophy:
   title: Philosophy
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis
-    lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
+  description: >-
+    "Mã te rongo, ka mõhio; Mã te mõhio, ka mãrama; Mã te marama, ka mãtau; Mã
+    te mātau, ka ora. Through listening, one will know; through knowing, one
+    will become enlightened; through enlightenment, one will gain wisdom;
+    through wisdom, one will thrive."
+
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla. Ultrices sagittis orci a scelerisque purus.
 services:
   title: Services
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
