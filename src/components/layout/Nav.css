@@ -1,7 +1,11 @@
-.nav-container {
+.nav-wrapper {
   width: 100vw;
   background-color: var(--satin-linen);
   font-family: var(--font-families-body);
+}
+
+.nav-container {
+  margin-bottom: 0;
 }
 
 .nav {
@@ -9,7 +13,6 @@
   flex-direction: var(--nav-flex-direction, row);
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0;
 }
 
 .nav__brand {

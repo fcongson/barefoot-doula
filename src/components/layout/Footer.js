@@ -5,10 +5,10 @@ import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <div className="footer-container">
-      <footer>
-        <Section>
-          <Container className="footer">
+    <div className="footer-wrapper">
+      <Section>
+        <Container>
+          <footer className="footer">
             <Link to="/" title="Logo" className="footer__logo">
               <div className="img" />
             </Link>
@@ -34,9 +34,9 @@ export const Footer = () => {
                 Copyright © {new Date().getFullYear()} Barefoot Doula
               </small>
             </div>
-          </Container>
-        </Section>
-      </footer>
+          </footer>
+        </Container>
+      </Section>
     </div>
   );
 };

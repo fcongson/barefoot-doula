@@ -7,15 +7,14 @@ export const Nav = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="nav-container">
-      <nav role="navigation" aria-label="main-navigation">
-        <Section>
-          <Container className="nav">
+    <div className="nav-wrapper">
+      <Section>
+        <Container className="nav-container">
+          <nav role="navigation" aria-label="main-navigation" className="nav">
             <div className="nav__brand">
               <Link to="/" title="Logo" className="nav__logo">
                 <div className="img" />
               </Link>
-              {/* Hamburger menu */}
               <button
                 className={`nav__button ${isActive && "nav__button--active"}`}
                 aria-expanded={isActive}
@@ -43,9 +42,9 @@ export const Nav = () => {
                 </Link>
               </li>
             </ul>
-          </Container>
-        </Section>
-      </nav>
+          </nav>
+        </Container>
+      </Section>
     </div>
   );
 };

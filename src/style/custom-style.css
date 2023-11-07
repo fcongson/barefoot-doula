@@ -16,17 +16,3 @@ html {
 main {
   flex: 1;
 }
-
-.full-width-image-container {
-  width: 100vw;
-  height: 600px;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin: 2rem -50vw;
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
