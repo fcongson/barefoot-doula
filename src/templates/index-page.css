@@ -1,0 +1,15 @@
+.home-wrapper {
+  font-size: var(--lagom-core-font-sizes-lg);
+}
+
+.home-wrapper .packages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* gap: 2rem; */
+}
+
+.home-wrapper .package {
+  width: 400px;
+}

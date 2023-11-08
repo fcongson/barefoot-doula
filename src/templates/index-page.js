@@ -12,6 +12,7 @@ import {
   SectionHeader,
 } from "../components/core";
 import { Layout } from "../components/layout";
+import "./index-page.css";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -25,7 +26,7 @@ export const IndexPageTemplate = ({
   testimonials,
 }) => {
   return (
-    <>
+    <div className="home-wrapper">
       <Hero
         image={
           <GatsbyImage
@@ -61,18 +62,20 @@ export const IndexPageTemplate = ({
         {services.description.map(({ paragraph }) => (
           <p>{paragraph}</p>
         ))}
-        {services.packages.map(({ title, text }, index) => (
-          <div key={index}>
-            <h3>{title}</h3>
-            <p>{text}</p>
-          </div>
-        ))}
+        <div className="packages">
+          {services.packages.map(({ title, text }, index) => (
+            <div className="package" key={index}>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </div>
+          ))}
+        </div>
       </FeaturedSection>
       <FeaturedSection backgroundColor="var(--opium)">
         <h2>{testimonials.title}</h2>
         <Testimonials testimonials={testimonials.testimonials} />
       </FeaturedSection>
-    </>
+    </div>
   );
 };
 
