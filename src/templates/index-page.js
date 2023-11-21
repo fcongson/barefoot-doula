@@ -51,7 +51,7 @@ export const IndexPageTemplate = ({
           <p>{paragraph}</p>
         ))}
       </FeaturedSection>
-      <FeaturedSection backgroundColor="var(--yellow-metal)">
+      <FeaturedSection backgroundColor="var(--body-color)">
         <h2>{philosophy.title}</h2>
         {philosophy.description.map(({ paragraph }) => (
           <p>{paragraph}</p>
@@ -71,7 +71,7 @@ export const IndexPageTemplate = ({
           ))}
         </div>
       </FeaturedSection>
-      <FeaturedSection backgroundColor="var(--opium)">
+      <FeaturedSection backgroundColor="var(--body-color)">
         <h2>{testimonials.title}</h2>
         <Testimonials testimonials={testimonials.testimonials} />
       </FeaturedSection>
