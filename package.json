@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "author": "Frank Congson",
   "dependencies": {
-    "@fcongson/lagom-tokens": "^0.15.0",
+    "@fcongson/lagom-tokens": "^0.16.0",
+    "@fcongson/lagom-ui": "^0.25.0",
     "clsx": "^2.0.0",
     "gatsby": "^5.12.5",
     "gatsby-plugin-image": "^3.12.0",

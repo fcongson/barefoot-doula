@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Barefoot Doula",
     description:
-      "This repo contains an example website that is built with Gatsby, and Decap CMS.",
+      "Rooted in relationships",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

@@ -1,8 +1,8 @@
+import { Container, Hero, PageHeader, Section } from "@fcongson/lagom-ui";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
 import React from "react";
-import { Container, Hero, PageHeader, Section } from "../components/core";
 import { Layout } from "../components/layout";
 
 // eslint-disable-next-line

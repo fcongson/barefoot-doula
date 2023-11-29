@@ -87,6 +87,8 @@
   --breakpoint-tablet-landscape: 992px;
 
   /* lagom overrides */
+  --lagom-core-font-families-heading: var(--font-families-monospace);
+  --lagom-core-font-families-body: var(--font-families-sans-serif);
   --lagom-component-page-header-typography: 700 var(--header-scale-2) / 1.22
     var(--font-families-heading);
   --lagom-component-section-header-typography: 700 var(--header-scale-3) / 1.22

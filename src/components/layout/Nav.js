@@ -1,6 +1,6 @@
+import { Container, Section } from "@fcongson/lagom-ui";
 import { Link } from "gatsby";
 import React, { useState } from "react";
-import { Container, Section } from "../core";
 import "./Nav.css";
 
 export const Nav = () => {
@@ -9,7 +9,7 @@ export const Nav = () => {
   return (
     <div className="nav-wrapper">
       <Section>
-        <Container className="nav-container">
+        <Container className="nav-container" marginNone>
           <nav role="navigation" aria-label="main-navigation" className="nav">
             <div className="nav__brand">
               <Link to="/" title="Logo" className="nav__logo">

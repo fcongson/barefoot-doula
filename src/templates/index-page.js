@@ -1,8 +1,3 @@
-import { graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
-import PropTypes from "prop-types";
-import React from "react";
-import { Testimonials } from "../components/Testimonials";
 import {
   Container,
   FeaturedSection,
@@ -10,7 +5,13 @@ import {
   PageHeader,
   Section,
   SectionHeader,
-} from "../components/core";
+  useTheme,
+} from "@fcongson/lagom-ui";
+import { graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
+import PropTypes from "prop-types";
+import React from "react";
+import { Testimonials } from "../components/Testimonials";
 import { Layout } from "../components/layout";
 import "./index-page.css";
 
@@ -25,6 +26,8 @@ export const IndexPageTemplate = ({
   services,
   testimonials,
 }) => {
+  const theme = useTheme();
+  console.log(theme);
   return (
     <div className="home-wrapper">
       <Hero
@@ -38,25 +41,31 @@ export const IndexPageTemplate = ({
       >
         <Section>
           <Container>
-            <PageHeader color="var(--satin-linen)">{heading}</PageHeader>
-            <SectionHeader color="var(--satin-linen)">
+            <PageHeader style={{ color: "var(--satin-linen)" }}>
+              {heading}
+            </PageHeader>
+            <SectionHeader style={{ color: "var(--satin-linen)" }}>
               {subheading}
             </SectionHeader>
           </Container>
         </Section>
       </Hero>
-      <FeaturedSection backgroundColor="var(--body-color)">
-        <h2>{intro.title}</h2>
-        {intro.description.map(({ paragraph }) => (
-          <p>{paragraph}</p>
-        ))}
-      </FeaturedSection>
-      <FeaturedSection backgroundColor="var(--body-color)">
-        <h2>{philosophy.title}</h2>
-        {philosophy.description.map(({ paragraph }) => (
-          <p>{paragraph}</p>
-        ))}
-      </FeaturedSection>
+      <Section>
+        <Container style={{ textAlign: "center" }}>
+          <h2>{intro.title}</h2>
+          {intro.description.map(({ paragraph }) => (
+            <p>{paragraph}</p>
+          ))}
+        </Container>
+      </Section>
+      <Section>
+        <Container style={{ textAlign: "center" }}>
+          <h2>{philosophy.title}</h2>
+          {philosophy.description.map(({ paragraph }) => (
+            <p>{paragraph}</p>
+          ))}
+        </Container>
+      </Section>
       <FeaturedSection backgroundColor="var(--xanadu)">
         <h2>{services.title}</h2>
         {services.description.map(({ paragraph }) => (
@@ -71,7 +80,7 @@ export const IndexPageTemplate = ({
           ))}
         </div>
       </FeaturedSection>
-      <FeaturedSection backgroundColor="var(--body-color)">
+      <FeaturedSection backgroundColor="var(--opium)">
         <h2>{testimonials.title}</h2>
         <Testimonials testimonials={testimonials.testimonials} />
       </FeaturedSection>

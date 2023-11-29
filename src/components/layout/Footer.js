@@ -1,6 +1,6 @@
+import { Container, Section } from "@fcongson/lagom-ui";
 import { Link } from "gatsby";
 import React from "react";
-import { Container, Section } from "../core";
 import "./Footer.css";
 
 export const Footer = () => {
