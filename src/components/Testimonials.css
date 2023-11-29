@@ -1,0 +1,32 @@
+.testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+  margin: 2rem;
+}
+.testimonial::before {
+  content: open-quote;
+  font-size: 8rem;
+  position: absolute;
+  top: -4.5rem;
+  left: -3rem;
+  opacity: 0.4;
+}
+.testimonial::after {
+  content: close-quote;
+  font-size: 8rem;
+  position: absolute;
+  bottom: -4.5rem;
+  right: -3rem;
+  opacity: 0.4;
+}
+.testimonial__quote {
+  text-align: left;
+  text-wrap: pretty;
+  font-style: italic;
+}
+.testimonial__author {
+  text-align: right;
+  font-weight: 700;
+}
