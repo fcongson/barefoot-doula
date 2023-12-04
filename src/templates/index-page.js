@@ -2,6 +2,7 @@ import {
   Container,
   FeaturedSection,
   Hero,
+  LinkButton,
   PageHeader,
   Section,
   SectionHeader,
@@ -41,10 +42,10 @@ export const IndexPageTemplate = ({
       >
         <Section>
           <Container>
-            <PageHeader style={{ color: "var(--satin-linen)" }}>
+            <PageHeader style={{ color: "var(--core-colors-satin-linen)" }}>
               {heading}
             </PageHeader>
-            <SectionHeader style={{ color: "var(--satin-linen)" }}>
+            <SectionHeader style={{ color: "var(--core-colors-satin-linen)" }}>
               {subheading}
             </SectionHeader>
           </Container>
@@ -66,21 +67,29 @@ export const IndexPageTemplate = ({
           ))}
         </Container>
       </Section>
-      <FeaturedSection backgroundColor="var(--xanadu)">
+      <FeaturedSection
+        backgroundColor="var(--core-colors-xanadu)"
+        className="services"
+      >
         <h2>{services.title}</h2>
         {services.description.map(({ paragraph }) => (
           <p>{paragraph}</p>
         ))}
         <div className="packages">
           {services.packages.map(({ title, text }, index) => (
-            <div className="package" key={index}>
-              <h3>{title}</h3>
+            <fieldset className="package" key={index}>
+              <legend>
+                <h3>{title}</h3>
+              </legend>
               <p>{text}</p>
-            </div>
+              <LinkButton to="/services" style={{ margin: "0 auto" }}>
+                Learn more
+              </LinkButton>
+            </fieldset>
           ))}
         </div>
       </FeaturedSection>
-      <FeaturedSection backgroundColor="var(--opium)">
+      <FeaturedSection backgroundColor="var(--core-colors-opium)">
         <h2>{testimonials.title}</h2>
         <Testimonials testimonials={testimonials.testimonials} />
       </FeaturedSection>

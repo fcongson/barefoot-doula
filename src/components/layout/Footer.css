@@ -2,8 +2,8 @@
   width: 100vw;
   min-height: 180px;
   padding: 2rem 0;
-  background-color: var(--lisbon-brown);
-  color: var(--satin-linen);
+  background-color: var(--core-colors-lisbon-brown);
+  color: var(--core-colors-satin-linen);
   font-family: var(--font-families-body);
 }
 
@@ -49,7 +49,7 @@
 
 .footer__link,
 .footer__link:hover {
-  color: var(--satin-linen);
+  color: var(--core-colors-satin-linen);
   border: none;
   padding: 0;
   font-weight: bold;

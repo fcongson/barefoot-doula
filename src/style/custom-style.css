@@ -1,6 +1,3 @@
-@import "@fcongson/lagom-tokens/css/theme/_dark.css";
-@import "@fcongson/lagom-tokens/css/theme/_light.css";
-@import "@fcongson/lagom-tokens/css/variables/_core.css";
 @import "./variables.css";
 @import "./global-style.css";
 

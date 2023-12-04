@@ -2,14 +2,18 @@
   font-size: var(--lagom-core-font-sizes-lg);
 }
 
-.home-wrapper .packages {
+.home-wrapper .package {
+  margin: 4rem 0;
+  padding: 1rem 2rem 2rem;
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: var(--core-colors-lisbon-brown);
+  border-width: 1px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  /* gap: 2rem; */
+  flex-direction: column;
+  justify-content: center;
 }
 
-.home-wrapper .package {
-  width: 400px;
+.home-wrapper .package legend {
+  padding: 0 2rem;
 }

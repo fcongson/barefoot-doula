@@ -1358,17 +1358,17 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fcongson/lagom-tokens@^0.16.0":
-  version "0.16.0"
-  resolved "https://npm.pkg.github.com/download/@fcongson/lagom-tokens/0.16.0/20e45607b84a817381d36e5aac6b8d36eaee1a1e#20e45607b84a817381d36e5aac6b8d36eaee1a1e"
-  integrity sha512-2/8OFKU58k5+5TO3o4X14QG8l/botzNuHagFVYed3jxslNkuzxICJs5TobnXDH9dTTz0G3kOZYwh1523SLwksQ==
+"@fcongson/lagom-tokens@^0.19.0":
+  version "0.19.0"
+  resolved "https://npm.pkg.github.com/download/@fcongson/lagom-tokens/0.19.0/42c6bf058ac809e1771bf2709cf3241e45d96a37#42c6bf058ac809e1771bf2709cf3241e45d96a37"
+  integrity sha512-wZVheeMUuE0pkjrHRejPlJkpqxkhS++vPc1hK2DREGin9fVJGU2mxcsHUcwYPatn0/y+NkRbtzff2sRKYoyQTw==
 
-"@fcongson/lagom-ui@^0.25.0":
-  version "0.25.0"
-  resolved "https://npm.pkg.github.com/download/@fcongson/lagom-ui/0.25.0/f4228b9b4ee9238b84e955bce1ac14e3a7ccb840#f4228b9b4ee9238b84e955bce1ac14e3a7ccb840"
-  integrity sha512-Lfg48+gZfczh23LirUvFO2GITQRchOQuQECrcyMxMxj8v9EiUN97BqzjX21f4fyYpRNtPjwo6ezQFjA8Oh/gzw==
+"@fcongson/lagom-ui@^0.27.0":
+  version "0.27.0"
+  resolved "https://npm.pkg.github.com/download/@fcongson/lagom-ui/0.27.0/ebe3547b9ae5bf223597e205c0a589fddb80fce3#ebe3547b9ae5bf223597e205c0a589fddb80fce3"
+  integrity sha512-Oc8/9cg8/py9yQL/yGGbxnaiviWGSk1xd2RSDo9/2KkFbANnrXEUdH/PrPMFT2keeLng62MDsXuhomN9Ewq8YQ==
   dependencies:
-    "@fcongson/lagom-tokens" "^0.16.0"
+    "@fcongson/lagom-tokens" "^0.19.0"
     clsx "^2.0.0"
     react "^18.2.0"
     react-dom "^18.2.0"
