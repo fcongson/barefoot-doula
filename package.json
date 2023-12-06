@@ -4,7 +4,7 @@
   "author": "Frank Congson",
   "dependencies": {
     "@fcongson/lagom-tokens": "^0.19.0",
-    "@fcongson/lagom-ui": "^0.27.0",
+    "@fcongson/lagom-ui": "^0.28.0",
     "clsx": "^2.0.0",
     "gatsby": "^5.12.5",
     "gatsby-plugin-image": "^3.12.0",

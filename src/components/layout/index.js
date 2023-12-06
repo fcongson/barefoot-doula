@@ -31,6 +31,14 @@ export const Layout = ({ children }) => {
         monospace: "Cutive Mono",
       },
       fontSizes: { body: "16px" },
+      headerScale: {
+        1: "81px",
+        2: "54px",
+        3: "36px",
+        4: "24px",
+        5: "16px",
+        6: "16px",
+      },
     },
     button: {
       borderRadius: "0.5rem",
