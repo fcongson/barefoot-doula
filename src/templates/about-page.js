@@ -12,7 +12,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <>
-      <Section>
+      <Section style={{ marginTop: "4rem" }}>
         <Container>
           <PageHeader>{title}</PageHeader>
         </Container>
