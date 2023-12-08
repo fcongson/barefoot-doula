@@ -1,17 +1,27 @@
-import { Container, Hero, PageHeader, Section } from "@fcongson/lagom-ui";
+import {
+  Container,
+  Hero,
+  PageHeader,
+  Section,
+  useTheme,
+} from "@fcongson/lagom-ui";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
 import React from "react";
+import { Content, HTMLContent } from "../components/Content";
 import { Layout } from "../components/layout";
 
 // eslint-disable-next-line
 export const ServicesPageTemplate = ({
   title,
   image,
-  heading,
-  description,
+  content,
+  contentComponent,
 }) => {
+  const PageContent = contentComponent || Content;
+  const theme = useTheme();
+
   return (
     <>
       <Hero
@@ -29,9 +39,11 @@ export const ServicesPageTemplate = ({
         </Section>
       </Hero>
       <Section>
-        <Container>
-          <h3>{heading}</h3>
-          <p>{description}</p>
+        <Container style={{ maxWidth: theme.sizes.maxWidthContent }}>
+          <PageContent
+            content={content}
+            style={{ maxWidth: theme.sizes.maxWidthContent }}
+          />
         </Container>
       </Section>
     </>
@@ -41,31 +53,27 @@ export const ServicesPageTemplate = ({
 ServicesPageTemplate.propTypes = {
   title: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  heading: PropTypes.string,
-  description: PropTypes.string,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
 };
 
 const ServicesPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { markdownRemark } = data;
 
   return (
     <Layout>
       <ServicesPageTemplate
-        title={frontmatter.title}
-        image={frontmatter.image}
-        heading={frontmatter.heading}
-        description={frontmatter.description}
+        contentComponent={HTMLContent}
+        title={markdownRemark.frontmatter.title}
+        image={markdownRemark.frontmatter.image}
+        content={markdownRemark.html}
       />
     </Layout>
   );
 };
 
 ServicesPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
+  data: PropTypes.object.isRequired,
 };
 
 export default ServicesPage;
@@ -73,6 +81,7 @@ export default ServicesPage;
 export const ServicesPageQuery = graphql`
   query ServicesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      html
       frontmatter {
         title
         image {
@@ -80,8 +89,6 @@ export const ServicesPageQuery = graphql`
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
         }
-        heading
-        description
       }
     }
   }

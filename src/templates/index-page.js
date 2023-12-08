@@ -76,12 +76,17 @@ export const IndexPageTemplate = ({
           <p>{paragraph}</p>
         ))}
         <div className="packages">
-          {services.packages.map(({ title, text }, index) => (
+          {services.packages.map(({ title, description, details }, index) => (
             <fieldset className="package" key={index}>
               <legend>
                 <h3>{title}</h3>
               </legend>
-              <p>{text}</p>
+              <p>{description}</p>
+              <ul>
+                {details.map(({ detail }) => (
+                  <li>{detail}</li>
+                ))}
+              </ul>
               <LinkButton to="/services" style={{ margin: "0 auto" }}>
                 Learn more
               </LinkButton>
@@ -168,7 +173,10 @@ export const pageQuery = graphql`
           }
           packages {
             title
-            text
+            description
+            details {
+              detail
+            }
           }
         }
         testimonials {

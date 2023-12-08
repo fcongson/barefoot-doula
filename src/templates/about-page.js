@@ -1,4 +1,4 @@
-import { Container, PageHeader, Section } from "@fcongson/lagom-ui";
+import { Container, PageHeader, Section, useTheme } from "@fcongson/lagom-ui";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
@@ -8,14 +8,21 @@ import { Layout } from "../components/layout";
 // eslint-disable-next-line
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
+  const theme = useTheme();
 
   return (
     <>
-      <Container />
       <Section>
         <Container>
           <PageHeader>{title}</PageHeader>
-          <PageContent content={content} />
+        </Container>
+      </Section>
+      <Section>
+        <Container style={{ maxWidth: theme.sizes.maxWidthContent }}>
+          <PageContent
+            content={content}
+            style={{ maxWidth: theme.sizes.maxWidthContent }}
+          />
         </Container>
       </Section>
     </>

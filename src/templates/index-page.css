@@ -17,3 +17,7 @@
 .home-wrapper .package legend {
   padding: 0 2rem;
 }
+.home-wrapper .package p,
+.home-wrapper .package ul {
+  text-align: left;
+}
